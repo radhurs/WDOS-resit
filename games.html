@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Game On - Games</title> 
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="game.css">
+  <!-- Web Manifest for PWA -->
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <!-- Top Part of Header -->
+    <div class="header-top">
+      <a href="#" class="site-name">Game On</a>
+      <input type="text" class="search-bar" placeholder="Search for games, consoles, and more...">
+      <div class="auth-links">
+        <button type="submit" class="search-btn">
+          <!--search icon from Icons8-->
+        <img src="image/search.png" alt="Search Icon" class="search-icon">
+        </button>
+        <a href="#">Sign in</a> | <a href="#">Sign up</a>
+      </div>
+      
+      <div class="cart-container">
+        <!--shopping cart icon from Icons8-->
+        <img src="image/shopping.png" alt="Cart Icon" class="cart-icon">
+        <span class="cart-count">3</span> <!-- Item count in the cart -->
+      </div>
+    </div>
+
+    <!-- Bottom Part of Header (Navigation) -->
+    <nav class="nav-links">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li class="dropdown">
+          <a href="games.html">Games</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Adventure</a></li>
+            <li><a href="#">RPG</a></li>
+          </ul>
+        </li>
+        <li><a href="Upcoming.html">Upcoming Games</a></li>
+        <li><a href="Console.html">Console and Peripherals</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main>
+    <!-- Genres Section -->
+    <section id="genres">
+        <h2>Genres</h2>
+        <h3>Action-Adventure</h3>
+        <div class="product-grid">
+
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="image/war.jpg" alt="God of War Ragnarok">
+                <h4>God of War Ragnarok</h4>
+                <p class="description">
+                    <strong>About:</strong>  Loosely based on Norse mythology, the game is set in ancient Scandinavia and features series protagonist, Kratos, 
+                    and his now teenage son, Atreus. Concluding the Norse era of the series, the story follows Kratos and 
+                    Atreus' efforts to prevent the nine realms from being destroyed by Ragnarök, the eschatological event which is central to Norse mythology 
+                    and was foretold to happen in the previous game after Kratos killed the Aesir god Bald<br>
+                    <strong>Developed by:</strong> Santa Monica Studio<br>
+                    <strong>Published by:</strong> Santa Monica Studio<br>
+                    <strong>Released on:</strong> Jan 15 2024
+                </p>
+                
+                <p class="price">Rs 2000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="image/bro.jpg" alt="Assassin Creed Brotherhood">
+                <h4>Assassin Creed Brotherhood</h4>
+                <p class="description">
+                    <strong>About:</strong> The main story takes place during the Italian Wars, spanning the years 1500–1507, 
+                    and continues from the events of Assassin's Creed II, as Ezio takes the fight against the Templars
+                     (led by the powerful Borgia family) to Rome, where he attempts to rebuild the Assassin Brotherhood in 
+                     Italy and liberate the city from the Borgias' control..<br>
+                    <strong>Developed by:</strong> Ubisoft<br>
+                    <strong>Published by:</strong>Ubisoft <br>
+                    <strong>Released on:</strong> Feb 20 2024
+                </p>
+                
+                <p class="price">RS 3000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="image/four.jpg" alt="GTA IV">
+                <h4>GTA IV</h4>
+                <p class="description">
+                    <strong>About:</strong> Set in the fictional Liberty City, based on New York City, the single-player 
+                    story follows Eastern European war veteran 
+                    Niko Bellic and his attempts to escape his past while under pressure from high-profile criminals.<br>
+                    <strong>Developed by:</strong> Rockstar North<br>
+                    <strong>Published by:</strong> Rockstar Games<br>
+                    <strong>Released on:</strong> Mar 15  2024
+                </p>
+                
+                <p class="price">RS 4000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-item">
+                <img src="image/hill.png" alt="Silent Hill 2">
+                <h4>Silent Hill 2</h4>
+                <p class="description">
+                    <strong>About:</strong> The second installment in the Silent Hill series, Silent Hill 2 centers on James Sunderland,
+                     a widower who journeys to the town of Silent Hill after receiving a letter from his dead wife.<br>
+                    <strong>Developed by:</strong> Team Silent<br>
+                    <strong>Published by:</strong> Konami<br>
+                    <strong>Released on:</strong> Apr 1 2024
+                </p>
+                
+                <p class="price">Rs 4000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        
+    <section id="genres">
+      <h3>Strategy</h3>
+      <div class="product-grid">
+
+          <!-- Product 5 -->
+          <div class="product-item">
+              <img src="image/pro.jpeg" alt="Prototype">
+              <h4>Protoype</h4>
+              <p class="description">
+                  <strong>About:</strong>  In Prototype, players control an amnesiac shapeshifter named Alex Mercer 
+                  as he attempts to stop an outbreak of a virus called Blacklight in Manhattan, which mutates individuals 
+                  into powerful, violent monsters. Alex also attempts to uncover his mysterious past 
+                  while coming into conflict with both the US military and a black operations force called Blackwatch.  <br>
+                  <strong>Developed by:</strong> Santa Monica Studio<br>
+                  <strong>Published by:</strong> Santa Monica Studio<br>
+                  <strong>Released on:</strong> Jan 15 2024
+              </p>
+              
+              <p class="price">Rs 2000</p>
+              <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-item">
+              <img src="image/harry.jpg" alt="Harry Potter 3">
+              <h4>Harry potter 3</h4>
+              <p class="description">
+                  <strong>About:</strong> The games follows Harry Potter (voiced by Tom Attenborough and Harry Robinson)
+                   along with Ron Weasley (voiced by Gregg Chillin) and Hermione Granger (voiced by Harper Marshall) as 
+                   they return to Hogwarts School of Witchcraft and Wizardry. Prisoner Sirius Black has escaped the 
+                   wizard prison Azkaban, and is supposedly ready to attack Harry in Hogwarts. The game begins on the 
+                   Hogwarts Express,[a] ignoring the events at Harry's home.
+                   Upon reaching Hogwarts, the trio follow the events of the novel, and learn magic by attending classes.
+                   <br>
+                  <strong>Developed by:</strong> Ubisoft<br>
+                  <strong>Published by:</strong>Ubisoft <br>
+                  <strong>Released on:</strong> Feb 20 2024
+              </p>
+              
+              <p class="price">RS 3000</p>
+              <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="product-item">
+              <img src="image/igi.jpg" alt="IGI">
+              <h4>IGI </h4>
+              <p class="description">
+                  <strong>About:</strong> Former British SAS agent David Llewellyn Jones is sent by the Pentagon to 
+                  Tallinn, Estonia, where he is to track down and extract a kidnapped Estonian arms dealer Josef Priboi,
+                   who has vital information 
+                  regarding the recent theft of an American W-88 nuclear warhead from a storage depot in Germany.<br>
+                  <strong>Developed by:</strong> Rockstar North<br>
+                  <strong>Published by:</strong> Rockstar Games<br>
+                  <strong>Released on:</strong> Mar 15  2024
+              </p>
+              
+              <p class="price">RS 4000</p>
+              <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="product-item">
+              <img src="image/rain.jpg" alt="Heavy Rain">
+              <h4>Heavy Rain</h4>
+              <p class="description">
+                  <strong>About:</strong> The game features four protagonists involved with the mystery 
+                  of the Origami Killer, a serial killer who uses extended periods of rainfall to drown his victims. <br>
+                  <strong>Developed by:</strong> Team Silent<br>
+                  <strong>Published by:</strong> Konami<br>
+                  <strong>Released on:</strong> Apr 1 2024
+              </p>
+              
+              <p class="price">Rs 4000</p>
+              <button class="add-to-cart">Add to Cart</button>
+          </div>
+      </div>
+
+
+        <!-- Order Now CTA -->
+        <div class="order-cta">
+            <button class="order-now">Order Now</button>
+        </div>
+    </section>
+</main>
+
+
+
+
+
+  <!-- Footer Section -->
+  <footer>
+    <!-- Bookmark CTA - "Back to top" -->
+    <a href="#top" class="back-to-top">Back to top</a>
+
+    <!-- Footer Content -->
+    <div class="footer-content">
+      <!-- Address and Contact Info -->
+      <div class="contact-info">
+        <p class="footer-heading">Gamestore</p>
+        <p>1234 Game St, Game City, GC 56789</p>
+        <p>Open: Mon - Fri: 9 AM - 8 PM</p>
+        <p>Contact: (077) 534-9578</p>
+        <p>Email: support@gameon.com</p>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <p class="footer-heading">Quick Links</p>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter Signup and Social Media -->
+      <div class="newsletter-social">
+        <p class="footer-heading">Sign up for Newsletter</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your Email" required>
+          <button type="submit">Sign Up</button>
+        </form>
+
+        <div class="social-media">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>Copyright @2024, GameOn, powered by Works</p>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>
+

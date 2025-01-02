@@ -1,0 +1,119 @@
+/* Description Section */
+
+.description {
+    text-align: center;
+    padding: 20px;
+}
+
+.description h1 {
+    color: red;
+}
+
+.text-content {
+    text-align: left;
+    max-width: 70%;
+}
+
+#new {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.text-content p {
+    margin-bottom: 15px;
+}
+
+
+
+
+/* Upcoming Games Section */
+
+.games {
+    padding: 20px;
+}
+
+.games h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.game-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.game-item {
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.game-item img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.game-item:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.game-item h3 {
+    margin-top: 10px;
+    color: red;
+}
+
+.game-item .release-date {
+    display: none;
+    color: red;
+    font-weight: bold;
+}
+
+.game-item:hover .release-date {
+    display: block;
+}
+
+.game-item .cta {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.game-item .cta:hover {
+    background-color: black;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    .game-grid {
+        justify-content: center;
+    }
+
+    .game-item {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .game-grid {
+        justify-content: center;
+    }
+
+    .game-item {
+        width: 100%;
+    }
+}
+

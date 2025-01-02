@@ -1,0 +1,136 @@
+ /* Main Section Styling */
+main {
+  padding: 20px;
+}
+
+/* Genres Section */
+#genres {
+  margin-bottom: 50px;
+}
+
+#genres h2 {
+  text-align: center;
+  color: red;
+}
+
+#genres h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Product Item Styling */
+.product-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover img {
+  transform: scale(1.05);
+}
+
+.product-item h4 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-item .description {
+  font-size: 14px;
+  margin: 10px 0;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.product-item:hover .description {
+  display: block;
+  opacity: 1;
+}
+
+.product-item .rating {
+  font-size: 16px;
+  color: gold;
+  margin: 10px 0;
+}
+
+.product-item .price {
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-item .add-to-cart {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.product-item .add-to-cart:hover {
+  background-color: darkred;
+}
+
+/* Order Now Button Styling */
+.order-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.order-now {
+  background-color: black;
+  color: white;
+  padding: 15px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-now:hover {
+  background-color: darkred;
+}
+
+/* Responsive  */
+@media screen and (max-width: 768px) {
+  header nav ul {
+      flex-direction: column;
+  }
+
+  .product-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .product-item {
+      max-width: 100%;
+  }
+
+  .product-item .description {
+      display: block;
+  }
+}

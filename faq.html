@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Game On - FAQ</title>
+  <link rel="stylesheet" href="faq.css">
+  <link rel="stylesheet" href="header.css">
+  <!-- Web Manifest for PWA -->
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+
+    <div id="top"></div> <!-- Used for "Back to top" link -->
+
+  <!-- Header Section -->
+  <header>
+    <!-- Top Part of Header -->
+    <div class="header-top">
+      <a href="#" class="site-name">Game On</a>
+      <input type="text" class="search-bar" placeholder="Search for games, consoles, and more...">
+      <button type="submit" class="search-btn">
+        <!--search icon from Icons8-->
+      <img src="image/search.png" alt="Search Icon" class="search-icon">
+      </button>
+      <div class="auth-links">
+        <a href="#">Sign in</a> | <a href="#">Sign up</a>
+      </div>
+      
+      <div class="cart-container">
+        <!--shopping cart icon from Icons8-->
+        <img src="image/shopping.png" alt="Cart Icon" class="cart-icon">
+        <span class="cart-count">3</span> <!-- Item count in the cart -->
+      </div>
+    </div>
+
+    <!-- Bottom Part of Header (Navigation) -->
+    <nav class="nav-links">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li class="dropdown">
+          <a href="games.html">Games</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Adventure</a></li>
+            <li><a href="#">RPG</a></li>
+          </ul>
+        </li>
+        <li><a href="Upcoming.html">Upcoming Games</a></li>
+        <li><a href="Console.html">Console and Peripherals</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+       <!-- Main Content -->
+       <main>
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq-item">
+                <input type="checkbox" id="q1">
+                <label class="question" for="q1">What is the return policy?</label>
+                <div class="answer">
+                    <p>We accept returns within 30 days of purchase if the product is unopened and in original condition.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="q2">
+                <label class="question" for="q2">How can I track my order?</label>
+                <div class="answer">
+                    <p>You can track your order by logging into your account and going to "My Orders". You will also receive tracking details via email.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="q3">
+                <label class="question" for="q3">Do you offer international shipping?</label>
+                <div class="answer">
+                    <p>Yes, we offer international shipping. Delivery times and costs may vary depending on the destination.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="q4">
+                <label class="question" for="q4">How can I cancel my order?</label>
+                <div class="answer">
+                    <p>You can cancel your order within 24 hours of placing it, provided it hasn't been shipped yet. Please contact customer service to initiate the cancellation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="q5">
+                <label class="question" for="q5">Are there discounts for bulk purchases?</label>
+                <div class="answer">
+                    <p>Yes, we offer discounts for bulk purchases. Please contact our support team for more information.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="q6">
+                <label class="question" for="q6">What payment methods do you accept?</label>
+                <div class="answer">
+                    <p>We accept major credit cards, PayPal, and other secure online payment methods.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="q7">
+                <label class="question" for="q7">Can I preorder a game?</label>
+                <div class="answer">
+                    <p>Yes, we offer preorder options for upcoming games. You can find the preorder option on the game’s product page.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="q8">
+                <label class="question" for="q8">Is there a warranty on the products?</label>
+                <div class="answer">
+                    <p>Most of our products come with a one-year warranty. Please refer to the specific product’s details for warranty information.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="q9">
+                <label class="question" for="q9">How can I contact customer support?</label>
+                <div class="answer">
+                    <p>You can reach customer support via email at gameon@gmaile.com or by filling out the contact form below.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="q10">
+                <label class="question" for="q10">Do you offer gift cards?</label>
+                <div class="answer">
+                    <p>Yes, we offer gift cards in various denominations. You can purchase them from our online store.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact-form">
+            <h1>Ask a Question</h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Basic Customer Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Query Type / Subject</legend>
+                    <label>
+                        <input type="radio" name="query_type" value="product_inquiry" required> Product Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="query_type" value="shipping_inquiry" required> Shipping or Order Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="query_type" value="store_feedback" required> Store Feedback
+                    </label>
+                    <label>
+                        <input type="radio" name="query_type" value="technical_support" required> Technical Support
+                    </label>
+                    <label>
+                        <input type="radio" name="query_type" value="general_query" required> General Query
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Feedback/Comments/Message</legend>
+                    <textarea name="message" rows="4" placeholder="Please describe your question or provide feedback" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Product or Game Specific</legend>
+                    <label for="product">Product:</label>
+                    <input type="text" id="product" name="product">
+                    <label for="rating">Rating/Experience with the Game (Optional):</label>
+                    <input type="text" id="rating" name="rating">
+                    <label for="purchase_date">Purchase Date (Optional):</label>
+                    <input type="date" id="purchase_date" name="purchase_date">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Improvement Suggestions</legend>
+                    <label for="suggestions">How can we improve our service?</label>
+                    <textarea name="suggestions" rows="4" required></textarea>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+
+
+
+  <!-- Footer Section -->
+  <footer>
+    <!-- Bookmark CTA - "Back to top" -->
+    <a href="#top" class="back-to-top">Back to top</a>
+
+    <!-- Footer Content -->
+    <div class="footer-content">
+      <!-- Address and Contact Info -->
+      <div class="contact-info">
+        <p class="footer-heading">Gamestore</p>
+        <p>1234 Game St, Game City, GC 56789</p>
+        <p>Open: Mon - Fri: 9 AM - 8 PM</p>
+        <p>Contact: (077) 534-9578</p>
+        <p>Email: support@gameon.com</p>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <p class="footer-heading">Quick Links</p>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter Signup and Social Media -->
+      <div class="newsletter-social">
+        <p class="footer-heading">Sign up for Newsletter</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your Email" required>
+          <button type="submit">Sign Up</button>
+        </form>
+
+        <div class="social-media">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>Copyright @2024, GameOn, powered by Works</p>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>
+
+
+
